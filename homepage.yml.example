@@ -1,0 +1,22 @@
+# Copy this configuration file to:
+# RedmineRoot/config/homepage.yml
+# 
+# There are 2 required parameters and 2 optional parameters
+#
+# Required
+# * :controller => which controller should be used
+# * :action => which action of the controller should used
+#
+# Optional
+# * :id => the id of the record.  Typically this is the project id
+# * :other => anything else will be lumped togeather and passed to the Router
+# 
+# Example to making the Homepage the Redmine wiki page called "Start"
+#
+# :action: index
+# :page: Start
+# :controller: wiki
+# :id: redmine
+#
+:action: index
+:controller: welcome
