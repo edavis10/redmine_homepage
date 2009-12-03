@@ -1,6 +1,6 @@
 require 'homepage'
 
-HOMEPAGE_CONFIGURATION_FILE = File.dirname(__FILE__) + "/../../../config/homepage.yml"
+HOMEPAGE_CONFIGURATION_FILE = File.dirname(__FILE__) + "/../../../../config/homepage.yml"
 
 if File.exists? HOMEPAGE_CONFIGURATION_FILE
   Homepage.config = YAML.load(File.read(HOMEPAGE_CONFIGURATION_FILE))
